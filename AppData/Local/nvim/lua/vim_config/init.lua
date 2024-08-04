@@ -5,4 +5,3 @@ require("vim_config.commands")
 local tabman = require("vim_config.tabman")
 
 vim.cmd("colorscheme slate")
--- tabman.onnewtab()

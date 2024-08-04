@@ -55,4 +55,6 @@ function nvim {
 Set-Alias -Name "branches" -Value "Run-Branches"
 Set-Alias -Name "vim" -Value "nvim.exe"
 Set-Alias -Name "nvim" -Value "nvim.exe"
+Set-Alias -Name "edit" -Value "nvim.exe"
 $env:VIMRUNTIME = "/Software/neovim/runtime"
+& 'C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\Launch-VsDevShell.ps1'

@@ -16,18 +16,23 @@ require("telescope").setup({
 
 
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- Would be useful if we didn't have telescope.find_files
+-- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
 vim.keymap.set("n", "<leader>ff", telescope.find_files, {})
 vim.keymap.set("n", "<leader>fg", telescope.live_grep, {})
 
+-- Move lines around naturally
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("n", "<S-k>", "<cmd>:m-2<CR>gv=gv")
+vim.keymap.set("n", "<S-j>", "<cmd>:m+1<CR>gv=gv")
 
-vim.keymap.set("n", "J", "mzJ`z")
+-- "Scroll" up/down and center
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+-- Format the current buffer using the available LSP
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
@@ -96,15 +101,14 @@ vim.keymap.set({"n","v","t","i"}, "<C-tab>", "<cmd>:tabn<CR>")
 vim.keymap.set({"n","v","t","i"}, "<C-S-tab>", "<cmd>:tabp<CR>")
 
 -- Create new tabs
--- vim.keymap.set({"n","v","t","i"}, "<C-t>", tabman.newtab)
+vim.keymap.set({"n","v","t","i"}, "<C-t>", "<cmd>:tabnew<CR>")
 -- vim.keymap.set({"n","v","t","i"}, "<C-w>", tabman.closetab, { nowait = true })
-
--- Move lines up and down
-vim.keymap.set({"v","i","n"}, "<A-Up>", "<S-k>")
-vim.keymap.set({"v","i","n"}, "<A-Down>", "<S-j>")
 
 -- Movement in insert mode
 vim.keymap.set("i", "<C-l>", "<Right>")
 vim.keymap.set("i", "<C-j>", "<Down>")
 vim.keymap.set("i", "<C-k>", "<Up>")
 vim.keymap.set("i", "<C-h>", "<Left>")
+
+-- Close current window
+vim.keymap.set("n", "<C-w>", "<cmd>:close<CR>", { nowait = true })

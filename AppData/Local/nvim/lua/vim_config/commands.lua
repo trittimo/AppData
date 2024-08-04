@@ -1,13 +1,16 @@
-vim.api.nvim_create_user_command("Init", function()
+vim.api.nvim_create_user_command("Setup", function()
     vim.cmd([[
-        lc ~\\AppData\\Local\\nvim\\lua\\vim_config\\
-        edit init.lua
-    ]])
-end, {})
-
-vim.api.nvim_create_user_command("PwshKeybinds", function()
-    vim.cmd([[
-        lc ~\\AppData\\Local\\Packages\\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\\LocalState
+        tabnew
+        lc ~/AppData/Local/Packages/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe/LocalState/
         edit settings.json
+        vert new
+        lc ~/Documents/PowerShell/
+        edit Microsoft.PowerShell_profile.ps1
+        vert new
+        tc ~/AppData/Local/nvim
+        edit lua/vim_config/init.lua
+        botright new
+        lc ~/
+        term
     ]])
 end, {})
