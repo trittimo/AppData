@@ -2,6 +2,8 @@ local tabman = require("vim_config.tabman")
 local telescope = require("telescope.builtin")
 local actions = require("telescope.actions")
 
+vim.g.mapleader = " "
+
 -- Telescope bindings
 require("telescope").setup({
     defaults = {
@@ -14,13 +16,23 @@ require("telescope").setup({
     }
 })
 
+vim.keymap.set("n", "<leader>ff", telescope.find_files, {})
+vim.keymap.set("n", "<leader>fg", telescope.live_grep, {})
 
-vim.g.mapleader = " "
+-- Comment toggler
+require("Comment").setup({
+    toggler = { line = "<C-/>" },
+    mappings = { extra = false }
+})
+-- vim.keymap.set({"n", "i"}, "<C-/>", function()
+--     return vim.api.nvim_get_vvar('count') == 0 and
+--         '<Plug>(comment_toggle_linewise_current)' or
+--         '<Plug>(comment_toggle_linewise_count)'
+--     end)
+
 -- Would be useful if we didn't have telescope.find_files
 -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
-vim.keymap.set("n", "<leader>ff", telescope.find_files, {})
-vim.keymap.set("n", "<leader>fg", telescope.live_grep, {})
 
 -- Move lines around naturally
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -91,6 +103,8 @@ vim.keymap.set("n", "<C-]>", "<cmd>:vert resize +5<CR>")
 vim.keymap.set("n", "<C-[>", "<cmd>:vert resize -5<CR>")
 vim.keymap.set("n", "<C-S-[>", "<cmd>:resize -5<CR>")
 vim.keymap.set("n", "<C-S-]>", "<cmd>:resize +5<CR>")
+vim.keymap.set({"n","i","v"}, "<C-w>--", "<cmd>:set ead=ver ea noea<CR>")
+vim.keymap.set({"n","i","v"}, "<C-w>==", "<cmd>:set ead=hor ea noea<CR>")
 
 -- When in the terminal, go quickly to command mode
 -- vim.keymap.set("t", ":", "<C-\\><C-n>:")
@@ -111,4 +125,4 @@ vim.keymap.set("i", "<C-k>", "<Up>")
 vim.keymap.set("i", "<C-h>", "<Left>")
 
 -- Close current window
-vim.keymap.set("n", "<C-w>", "<cmd>:close<CR>", { nowait = true })
+vim.keymap.set("n", "<C-q>", "<cmd>:close<CR>")

@@ -94,6 +94,10 @@
         {
             "keys": "alt+up",
             "command": { "action": "sendInput", "input": "\u001b[107;2u" }
+        },
+        {
+            "keys": "ctrl+/",
+            "command": { "action": "sendInput", "input": "\u001b[47;5u" }
         }
     ],
     "copyFormatting": "none",
