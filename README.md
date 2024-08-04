@@ -11,6 +11,9 @@ Run `winget install BurntSushi.ripgrep.MSVC`
 1. Follow the instructions [here](https://github.com/neovim/neovim/blob/master/BUILD.md#building-on-windows)
 2. Make sure the VIMRUNTIME environment variable is set properly (should be done by the PS profile)
 
+## On first install (or after installing new plugins)
+```:PlugInstall```
+
 ## Advanced keybinds
 Some keybinds require tinkering with the Windows Terminal `settings.json` file. Here are some handy links:
 * http://www.leonerd.org.uk/hacks/fixterms/
