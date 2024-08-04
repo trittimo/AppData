@@ -3,9 +3,8 @@ This repository is meant to be cloned into the root of your user directory (aka 
 
 Run `winget install llvm` (for treesitter support)
 * Add `C:\Program Files\LLVM\bin` to path
-* Run `winget install BurntSushi.ripgrep.MSVC`
 
-After cloning, simply restart windows terminal
+Run `winget install BurntSushi.ripgrep.MSVC`
 
 # NVim setup
 ## Building from source
