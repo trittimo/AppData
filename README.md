@@ -10,9 +10,9 @@ After cloning, simply restart windows terminal
 
 ## Advanced keybinds
 Some keybinds require tinkering with the Windows Terminal `settings.json` file. Here are some handy links:
-    * http://www.leonerd.org.uk/hacks/fixterms/
-    * https://stackoverflow.com/questions/16359878/how-to-map-shift-enter#comment134614136_42461580
-    * https://en.wikipedia.org/wiki/ASCII#Printable_characters
+* http://www.leonerd.org.uk/hacks/fixterms/
+* https://stackoverflow.com/questions/16359878/how-to-map-shift-enter#comment134614136_42461580
+* https://en.wikipedia.org/wiki/ASCII#Printable_characters
 
 Quote:
 These mappings correspond to the CSI u codes. You can refer to them here: leonerd.org.uk/hacks/fixterms. So <ESC>[13;2u means: - <ESC>[: CSI input - 13 represents \r according to the ASCII table: en.wikipedia.org/wiki/ASCII#Control_code_chart - ;2u represents the Shift modifier
