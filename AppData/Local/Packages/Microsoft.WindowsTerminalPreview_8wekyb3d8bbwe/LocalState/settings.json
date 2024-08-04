@@ -1,0 +1,159 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema-preview",
+    "actions": 
+    [
+        {
+            "keys": "shift+enter",
+            "command": { "action": "sendInput", "input": "\u001b[13;2u" }
+        },
+        {
+            "keys": "ctrl+enter",
+            "command": { "action": "sendInput", "input": "\u001b[13;5u" }
+        },
+        {
+            "keys": "ctrl+shift+[",
+            "command": { "action": "sendInput", "input": "\u001b[91;6u" }
+        },
+        {
+            "keys": "ctrl+shift+]",
+            "command": { "action": "sendInput", "input": "\u001b[93;6u" }
+        },
+        {
+            "keys": "ctrl+1",
+            "command": { "action": "sendInput", "input": "\u001b[49;5u" }
+        },
+        {
+            "keys": "ctrl+2",
+            "command": { "action": "sendInput", "input": "\u001b[50;5u" }
+        },
+        {
+            "keys": "ctrl+3",
+            "command": { "action": "sendInput", "input": "\u001b[51;5u" }
+        },
+        {
+            "keys": "ctrl+4",
+            "command": { "action": "sendInput", "input": "\u001b[52;5u" }
+        },
+        {
+            "keys": "ctrl+5",
+            "command": { "action": "sendInput", "input": "\u001b[53;5u" }
+        },
+        {
+            "keys": "ctrl+6",
+            "command": { "action": "sendInput", "input": "\u001b[54;5u" }
+        },
+        {
+            "keys": "ctrl+7",
+            "command": { "action": "sendInput", "input": "\u001b[55;5u" }
+        },
+        {
+            "keys": "ctrl+8",
+            "command": { "action": "sendInput", "input": "\u001b[56;5u" }
+        },
+        {
+            "keys": "ctrl+9",
+            "command": { "action": "sendInput", "input": "\u001b[57;5u" }
+        },
+        {
+            "keys": "ctrl+`",
+            "command": { "action": "sendInput", "input": "\u001b[96;5u" }
+        },
+        {
+            "keys": "ctrl+shift+h",
+            "command": { "action": "sendInput", "input": "\u001b[104;6u" }
+        },
+        {
+            "keys": "ctrl+shift+j",
+            "command": { "action": "sendInput", "input": "\u001b[106;6u" }
+        },
+        {
+            "keys": "ctrl+shift+k",
+            "command": { "action": "sendInput", "input": "\u001b[107;6u" }
+        },
+        {
+            "keys": "ctrl+shift+l",
+            "command": { "action": "sendInput", "input": "\u001b[108;6u" }
+        },
+        {
+            "keys": "ctrl+tab",
+            "command": { "action": "sendInput", "input": "\u001b[09;5u" }
+        },
+        {
+            "keys": "ctrl+shift+tab",
+            "command": { "action": "sendInput", "input": "\u001b[09;6u" }
+        },
+        {
+            "keys": "ctrl+w",
+            "command": { "action": "sendInput", "input": "\u001b[119;5u" }
+        },
+        {
+            "keys": "alt+down",
+            "command": { "action": "sendInput", "input": "\u001b[106;2u" }
+        },
+        {
+            "keys": "alt+up",
+            "command": { "action": "sendInput", "input": "\u001b[107;2u" }
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": {},
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{6d50a276-dc32-580f-a339-b142edee962b}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{af1dc391-dd9c-51b8-b14a-da7f14c7312c}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
+            }
+        ]
+    },
+    "schemes": [],
+    "themes": []
+}
