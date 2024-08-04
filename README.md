@@ -15,4 +15,6 @@ Some keybinds require tinkering with the Windows Terminal `settings.json` file. 
 * https://en.wikipedia.org/wiki/ASCII#Printable_characters
 
 Quote:
-These mappings correspond to the CSI u codes. You can refer to them here: leonerd.org.uk/hacks/fixterms. So <ESC>[13;2u means: - <ESC>[: CSI input - 13 represents \r according to the ASCII table: en.wikipedia.org/wiki/ASCII#Control_code_chart - ;2u represents the Shift modifier
+> These mappings correspond to the CSI u codes. You can refer to them here: [leonerd.org.uk](leonerd.org.uk/hacks/fixterms).
+> So <ESC>[13;2u means: - <ESC>[: CSI input - 13 represents \r according to the ASCII table: [wikipedia](en.wikipedia.org/wiki/ASCII#Control_code_chart)
+> ;2u represents the Shift modifier
