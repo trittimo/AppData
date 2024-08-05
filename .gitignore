@@ -1,0 +1,47 @@
+**/*_compiled.lua
+
+# Ignore everything
+/*
+
+# Except README.md
+!README.md
+# And this file
+!.gitignore
+
+# Don't ignore AppData
+!/AppData
+
+# Ignore everything in AppData
+/AppData/*
+# Except for Local
+!/AppData/Local
+
+# Ignore everything in Local
+/AppData/Local/*
+# Except for nvim
+!/AppData/Local/nvim
+# And Packages
+!/AppData/Local/Packages
+
+# Ignore everything in Packages
+/AppData/Local/Packages/*
+# Except for WindowsTerminal
+!/AppData/Local/Packages/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe
+
+# Ignore everything in WindowsTerminal
+/AppData/Local/Packages/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe/*
+# Except for LocalState
+!/AppData/Local/Packages/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe/LocalState
+
+# Ignore everything in LocalState
+/AppData/Local/Packages/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe/LocalState/*
+# Except for settings.json
+!/AppData/Local/Packages/Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe/LocalState/settings.json
+
+# Don't ignore Documents
+!/Documents
+
+# Ignore everything in Documents
+/Documents/*
+# Except for PowerShell
+!/Documents/PowerShell/

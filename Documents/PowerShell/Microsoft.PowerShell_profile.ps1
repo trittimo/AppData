@@ -46,15 +46,14 @@ function Clear-Host {
 
 function nvim {
     if ($env:NVIM) {
-        & "C:\Program Files (x86)\nvim\bin\nvim.exe" --server $env:NVIM --remote-silent $args
+        & "nvim.exe" --server $env:NVIM --remote-silent $args
     } else {
-        & "C:\Program Files (x86)\nvim\bin\nvim.exe" $args
+        & "nvim.exe" $args
     }
 }
 
 Set-Alias -Name "branches" -Value "Run-Branches"
-Set-Alias -Name "vim" -Value "nvim.exe"
-Set-Alias -Name "nvim" -Value "nvim.exe"
-Set-Alias -Name "edit" -Value "nvim.exe"
+Set-Alias -Name "vim" -Value "nvim"
+Set-Alias -Name "edit" -Value "nvim"
 $env:VIMRUNTIME = "/Software/neovim/runtime"
 # & 'C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\Tools\Launch-VsDevShell.ps1'
