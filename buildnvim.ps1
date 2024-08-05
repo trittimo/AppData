@@ -6,6 +6,7 @@ try {
     cmake --build .deps --config Release
     cmake -B build -G Ninja -D CMAKE_BUILD_TYPE=Release
     cmake --build build --config Release
+    cp .\build\runtime\doc\tags runtime\doc\tags
 } finally {
     cd $currdir
 }

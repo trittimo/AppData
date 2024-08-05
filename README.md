@@ -11,6 +11,11 @@ Run `winget install BurntSushi.ripgrep.MSVC`
 1. Follow the instructions [here](https://github.com/neovim/neovim/blob/master/BUILD.md#building-on-windows)
 2. Make sure the VIMRUNTIME environment variable is set properly (should be done by the PS profile)
 
+## Stupid things
+Neovim, for some godforsaken reason, does not include everything it needs in the build/runtime folder. It ALSO does not include everything it needs in the root level /runtime folder. What does this mean? Some dependencies are missing. Namely, the `runtime/doc/tags` file.
+
+This annoys the hell out of me. However, it is easily solved by copying the tags file to the `$env:VIMRUNTIME` folder. The buildnvim.ps1 script include in this repo handles this.
+
 ## On first install (or after installing new plugins)
 ```:PlugInstall```
 
