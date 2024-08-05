@@ -29,5 +29,6 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "120"
 
-vim.opt.shell = '"/Program Files/PowerShell/7-preview/pwsh.exe"'
+vim.opt.shell = 'pwsh.exe'
 vim.opt.tags = vim.opt.tags + "/Software/neovim/runtime/doc/tags" -- This shouldn't be necessary, but nvim likes to break in wonderful ways when running from source
+vim.opt.tags = vim.opt.tags + "/Software/neovim/build/runtime/doc"
